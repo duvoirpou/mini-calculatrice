@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styleC.css" />
+	<meta charset="utf-8"/>
+	
+    <title></title>
+  </head>
+  <body>
+	<table border="1px solide red" class="calculatrice" id="calc">
+		<tr>
+                <td colspan="4" class="calc_td_resultat">
+                    <input type="text" readonly="readonly" name="calc_resultat" id="calc_result" class="calc_resultat" id="memoire" />
+					
+                </td>
+            </tr>
+			
+			<tr>
+                <td class="calc_td_btn">
+                        <input type="button" id="racine" class="calc_btn" value="&#8730;" onclick="racine()"/>
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="Cos" onclick="cos()" />
+                </td>
+					<td class="calc_td_btn">
+							<input type="button" class="calc_btn" value="Sin" onclick="sin()" />
+					</td>
+                <td class="calc_td_btn">
+                        <input type="button" id="tan" class="calc_btn" value="Tan" onclick="tan()"/>
+                </td>
+				
+            </tr>
+			
+			
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" id="CE" class="calc_btn" value="CE" onclick="effacer()"/>
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&larr;" onclick="supprime()" />
+                </td>
+					<td class="calc_td_btn">
+							<input type="button" class="calc_btn" value="%" onclick="pourcent()" />
+					</td>
+                <td class="calc_td_btn">
+                        <input type="button" id="plus" class="calc_btn" value="+" onclick="plus()"/>
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" id="btn7" class="calc_btn" value="7" onclick="myFunction('sept')" /> 
+						
+		
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="8" onclick="huit()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="9" onclick="neuf()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" id="moins" class="calc_btn" value="-" onclick="moins()" />
+                </td>
+            </tr>
+                        <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="4" onclick="quatre()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="5" onclick="cinq()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="6" onclick="six()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" id="fois" class="calc_btn" value="x" onclick="fois()" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="1" onclick="un()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="2" onclick="deux()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="3" onclick="trois()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" id="divise" class="calc_btn" value="&divide;" onclick="divise()" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn" colspan="2">
+                        <input type="button" class="calc_btn" value="0" onclick="zero()" />
+                </td>
+                <!--<td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&plusmn;" onclick="javascript:f_calc('calc','+-');" />
+                </td>-->
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="." onclick="virgule()" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" id="egal" class="calc_btn" value="=" onclick="egal()" />
+                </td>
+            </tr>
+			
+			
+			<tr class="cache">
+                <td colspan="4">
+                        <input type="number" id="memoire"></input>
+                </td>
+                
+            </tr>
+			
+			
+	</table>
+	
+	
+	
+	<script src="scriptC.js"></script>
+  </body>
+</html>
